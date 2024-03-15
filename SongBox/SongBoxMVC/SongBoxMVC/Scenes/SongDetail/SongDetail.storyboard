@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Song Detail View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="SongDetailViewController" id="Y6W-OH-hqX" customClass="SongDetailViewController" customModule="SongBoxMVC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc" customClass="SongDetailView" customModule="SongBoxMVC" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qda-UF-RLr">
+                                <rect key="frame" x="16" y="91" width="58" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yYx-xq-cA9">
+                                <rect key="frame" x="16" y="138" width="146" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genre:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wms-eJ-B4v">
+                                <rect key="frame" x="16" y="184" width="78" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Artist value" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vs0-ed-DU6">
+                                <rect key="frame" x="170" y="141" width="207" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="207" id="G1A-CA-Vmf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Title value" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MeS-j4-M5N">
+                                <rect key="frame" x="82" y="94" width="295" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="295" id="EHQ-KQ-znD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genre value" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOf-Lc-c3C">
+                                <rect key="frame" x="102" y="187" width="275" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="275" id="FfE-w9-y9b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wms-eJ-B4v" firstAttribute="top" secondItem="yYx-xq-cA9" secondAttribute="bottom" constant="16" id="1vH-x0-PjX"/>
+                            <constraint firstItem="EOf-Lc-c3C" firstAttribute="top" secondItem="yYx-xq-cA9" secondAttribute="bottom" constant="19" id="5hB-JR-wt4"/>
+                            <constraint firstItem="yYx-xq-cA9" firstAttribute="top" secondItem="qda-UF-RLr" secondAttribute="bottom" constant="17" id="6ph-9i-eqY"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="EOf-Lc-c3C" secondAttribute="trailing" constant="16" id="Diz-ha-rrW"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="vs0-ed-DU6" secondAttribute="trailing" constant="16" id="L0j-Mi-Ik5"/>
+                            <constraint firstItem="vs0-ed-DU6" firstAttribute="top" secondItem="MeS-j4-M5N" secondAttribute="bottom" constant="23" id="RnA-y0-5o5"/>
+                            <constraint firstItem="wms-eJ-B4v" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="cSV-t3-XHH"/>
+                            <constraint firstItem="qda-UF-RLr" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="32" id="edD-Io-iYH"/>
+                            <constraint firstItem="MeS-j4-M5N" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="35" id="faB-sG-ifc"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="MeS-j4-M5N" secondAttribute="trailing" constant="16" id="l1V-35-Dae"/>
+                            <constraint firstItem="qda-UF-RLr" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="sfd-vI-OOu"/>
+                            <constraint firstItem="yYx-xq-cA9" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="x2A-vE-ZhF"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="artistNameLabel" destination="vs0-ed-DU6" id="TQQ-xS-eMf"/>
+                            <outlet property="genreLabel" destination="EOf-Lc-c3C" id="efd-B9-eEa"/>
+                            <outlet property="titleLabel" destination="MeS-j4-M5N" id="4Cv-pZ-Q8A"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="songDetailView" destination="5EZ-qb-Rvc" id="QMD-QG-DLX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="-34"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

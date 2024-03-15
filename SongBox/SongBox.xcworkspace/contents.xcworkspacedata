@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:SongBoxAPI/SongBoxAPI.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SongBoxUtility/SongBoxUtility.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SongBoxMVC/SongBoxMVC.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SongBoxMVVM/SongBoxMVVM.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SongBoxVIPER/SongBoxVIPER.xcodeproj">
+   </FileRef>
+</Workspace>

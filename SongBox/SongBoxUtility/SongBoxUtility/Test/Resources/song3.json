@@ -1,0 +1,23 @@
+{
+  "artistName": "KÖFN & Simge",
+  "id": "1716601601",
+  "name": "Yakışıklı",
+  "releaseDate": "2023-11-24",
+  "kind": "songs",
+  "artistId": "1478586805",
+  "artistUrl": "https://music.apple.com/tr/artist/k%C3%B6fn/1478586805",
+  "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/a5/b7/5b/a5b75b58-a09f-fe6e-8422-d37d27ba42c8/cover.jpg/100x100bb.jpg",
+  "genres": [
+    {
+      "genreId": "14",
+      "name": "Pop",
+      "url": "https://itunes.apple.com/tr/genre/id14"
+    },
+    {
+      "genreId": "34",
+      "name": "Music",
+      "url": "https://itunes.apple.com/tr/genre/id34"
+    }
+  ],
+  "url": "https://music.apple.com/tr/album/yak%C4%B1%C5%9F%C4%B1kl%C4%B1/1716601182?i=1716601601"
+}
