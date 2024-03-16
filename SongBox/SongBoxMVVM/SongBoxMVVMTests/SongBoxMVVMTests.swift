@@ -25,15 +25,15 @@ final class SongBoxMVVMTests: XCTestCase {
     override func tearDownWithError() throws {}
 
     func testExample() throws {
-        // Given
+        // Given:
         let song1 = try ResourceLoader.loadSong(resource: .song1)
         let song3 = try ResourceLoader.loadSong(resource: .song3)
         service.songs = [song1, song3]
 
-        // When
+        // When:
         viewModel.load()
 
-        // Then
+        // Then:
         XCTAssertEqual(view.outputs.count, 4)
 
         switch try view.outputs.element(at: 0) {
@@ -53,10 +53,38 @@ final class SongBoxMVVMTests: XCTestCase {
             XCTFail("This output should be `showSongList`")
         }
     }
+
+    func testNavigation() throws {
+        // Given:
+        let song1 = try ResourceLoader.loadSong(resource: .song1)
+        let song3 = try ResourceLoader.loadSong(resource: .song3)
+        service.songs = [song1, song3]
+        viewModel.load()
+        view.reset()
+
+        // When:
+        viewModel.didSelectSong(at: 0)
+
+        // Then:
+        XCTAssertEqual(view.detailRouteCall, true)
+    }
 }
 
 private final class MockView: SongListViewModelDelegate {
     var outputs: [SongListViewModelOutput] = []
+    var detailRouteCall: Bool = false
+
+    func navigate(to route: SongBoxMVVM.SongListViewRoute) {
+        switch route {
+        case .detail:
+            detailRouteCall = true
+        }
+    }
+    
+    func reset() {
+        outputs.removeAll()
+        detailRouteCall = false
+    }
 
     func handleViewModelOutput(_ output: SongListViewModelOutput) {
         outputs.append(output)
