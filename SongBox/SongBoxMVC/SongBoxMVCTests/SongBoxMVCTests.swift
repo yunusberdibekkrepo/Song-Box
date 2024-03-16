@@ -7,7 +7,7 @@
 
 @testable import SongBoxAPI
 @testable import SongBoxMVC
-@testable import SongBoxUtility
+import SongBoxUtility
 import XCTest
 
 final class SongBoxMVCTests: XCTestCase {

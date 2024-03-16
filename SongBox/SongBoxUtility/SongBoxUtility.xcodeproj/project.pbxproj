@@ -14,7 +14,23 @@
 		AA284E852BA50CA000217F36 /* song1.json in Resources */ = {isa = PBXBuildFile; fileRef = AA284E822BA50CA000217F36 /* song1.json */; };
 		AA284E862BA50CA000217F36 /* song3.json in Resources */ = {isa = PBXBuildFile; fileRef = AA284E832BA50CA000217F36 /* song3.json */; };
 		AA284E882BA50CA700217F36 /* ResourceLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA284E872BA50CA700217F36 /* ResourceLoader.swift */; };
+		AA5765CD2BA52ABC0034A8CB /* SongBoxAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA5765CC2BA52ABC0034A8CB /* SongBoxAPI.framework */; };
+		AA5765CE2BA52ABC0034A8CB /* SongBoxAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AA5765CC2BA52ABC0034A8CB /* SongBoxAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AA5765CF2BA52ABC0034A8CB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AA5765CE2BA52ABC0034A8CB /* SongBoxAPI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AA284E2C2BA4DD9300217F36 /* SongBoxUtility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SongBoxUtility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -25,6 +41,7 @@
 		AA284E822BA50CA000217F36 /* song1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = song1.json; sourceTree = "<group>"; };
 		AA284E832BA50CA000217F36 /* song3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = song3.json; sourceTree = "<group>"; };
 		AA284E872BA50CA700217F36 /* ResourceLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceLoader.swift; sourceTree = "<group>"; };
+		AA5765CC2BA52ABC0034A8CB /* SongBoxAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SongBoxAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA5765CD2BA52ABC0034A8CB /* SongBoxAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +61,7 @@
 			children = (
 				AA284E2E2BA4DD9300217F36 /* SongBoxUtility */,
 				AA284E2D2BA4DD9300217F36 /* Products */,
+				AA5765CB2BA52ABC0034A8CB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +111,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		AA5765CB2BA52ABC0034A8CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA5765CC2BA52ABC0034A8CB /* SongBoxAPI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -114,6 +141,7 @@
 				AA284E282BA4DD9300217F36 /* Sources */,
 				AA284E292BA4DD9300217F36 /* Frameworks */,
 				AA284E2A2BA4DD9300217F36 /* Resources */,
+				AA5765CF2BA52ABC0034A8CB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

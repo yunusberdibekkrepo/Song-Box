@@ -61,5 +61,6 @@ extension SongListView: UITableViewDataSource {
 extension SongListView: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         delegate?.didSelectSong(at: indexPath.row)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }

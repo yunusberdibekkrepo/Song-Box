@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Song Detail View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="SongDetailViewController" id="Y6W-OH-hqX" customClass="SongDetailViewController" customModule="SongBoxMVVM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Title value" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="STq-XC-xEH">
+                                <rect key="frame" x="82" y="94" width="295" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="295" id="auC-BI-DP8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s3z-Zi-vOw">
+                                <rect key="frame" x="16" y="137" width="146" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Artist value" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkc-HU-uVL">
+                                <rect key="frame" x="170" y="140" width="207" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="207" id="Tzq-zw-pXN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zip-K0-3bc">
+                                <rect key="frame" x="16" y="91" width="58" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genre:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yxm-Vu-Y7P">
+                                <rect key="frame" x="16" y="183" width="78" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genre value" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="au1-z2-HW3">
+                                <rect key="frame" x="102" y="186" width="275" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="275" id="hgU-Dz-gnh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dkc-HU-uVL" firstAttribute="top" secondItem="STq-XC-xEH" secondAttribute="bottom" constant="22" id="0aV-IU-Dry"/>
+                            <constraint firstItem="zip-K0-3bc" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="AFP-wn-niy"/>
+                            <constraint firstItem="Yxm-Vu-Y7P" firstAttribute="top" secondItem="s3z-Zi-vOw" secondAttribute="bottom" constant="16" id="Cg6-NA-X5e"/>
+                            <constraint firstItem="zip-K0-3bc" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="32" id="FvG-eP-VJy"/>
+                            <constraint firstItem="Yxm-Vu-Y7P" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="StI-jr-cTR"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="dkc-HU-uVL" secondAttribute="trailing" constant="16" id="kx9-gB-LOg"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="STq-XC-xEH" secondAttribute="trailing" constant="16" id="nTF-Oe-sx5"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="au1-z2-HW3" secondAttribute="trailing" constant="16" id="nZ4-Sc-MgW"/>
+                            <constraint firstItem="au1-z2-HW3" firstAttribute="top" secondItem="s3z-Zi-vOw" secondAttribute="bottom" constant="19" id="pox-kL-Fre"/>
+                            <constraint firstItem="STq-XC-xEH" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="35" id="xdw-b3-khm"/>
+                            <constraint firstItem="s3z-Zi-vOw" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="z96-mg-lFt"/>
+                            <constraint firstItem="s3z-Zi-vOw" firstAttribute="top" secondItem="zip-K0-3bc" secondAttribute="bottom" constant="16" id="zYa-3V-PNs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="artistNameLabel" destination="dkc-HU-uVL" id="4X7-Er-y6z"/>
+                        <outlet property="genreLabel" destination="au1-z2-HW3" id="J0b-Ia-L04"/>
+                        <outlet property="titleLabel" destination="STq-XC-xEH" id="Pgl-Pu-sBw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="-34"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

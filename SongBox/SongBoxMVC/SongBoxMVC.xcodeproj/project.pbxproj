@@ -147,7 +147,6 @@
 				AA284DC62BA4D3BF00217F36 /* AppDelegate.swift */,
 				AA284E532BA4E4FE00217F36 /* AppContainer.swift */,
 				AA284E552BA4E50400217F36 /* AppRouter.swift */,
-				AA284DD12BA4D3C000217F36 /* LaunchScreen.storyboard */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -155,6 +154,7 @@
 		AA284E512BA4E42800217F36 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AA284DD12BA4D3C000217F36 /* LaunchScreen.storyboard */,
 				AA284DCF2BA4D3C000217F36 /* Assets.xcassets */,
 				AA284DD42BA4D3C000217F36 /* Info.plist */,
 			);

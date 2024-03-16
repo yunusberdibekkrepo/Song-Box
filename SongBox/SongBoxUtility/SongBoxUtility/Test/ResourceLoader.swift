@@ -8,14 +8,14 @@
 import Foundation
 import SongBoxAPI
 
-class ResourceLoader {
-    enum SongResource: String {
+public class ResourceLoader {
+    public enum SongResource: String {
         case song1
         case song2
         case song3
     }
 
-    static func loadSong(resource: SongResource) throws -> Song {
+    public static func loadSong(resource: SongResource) throws -> Song {
         let bundle = Bundle.test
         let url = bundle.url(forResource: resource.rawValue, withExtension: "json").unsafelyUnwrapped
         let data = try Data(contentsOf: url)
