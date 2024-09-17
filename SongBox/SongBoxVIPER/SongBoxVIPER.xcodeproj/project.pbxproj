@@ -8,22 +8,84 @@
 
 /* Begin PBXBuildFile section */
 		AA284E072BA4D3F900217F36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA284E062BA4D3F900217F36 /* AppDelegate.swift */; };
-		AA284E092BA4D3F900217F36 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA284E082BA4D3F900217F36 /* SceneDelegate.swift */; };
-		AA284E0B2BA4D3F900217F36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA284E0A2BA4D3F900217F36 /* ViewController.swift */; };
-		AA284E0E2BA4D3F900217F36 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = AA284E0D2BA4D3F900217F36 /* Base */; };
+		AA284E0B2BA4D3F900217F36 /* SongListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA284E0A2BA4D3F900217F36 /* SongListViewController.swift */; };
 		AA284E102BA4D3FA00217F36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA284E0F2BA4D3FA00217F36 /* Assets.xcassets */; };
 		AA284E132BA4D3FA00217F36 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = AA284E122BA4D3FA00217F36 /* Base */; };
+		BEE927A42C99B19100DCEE6C /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE927A32C99B19100DCEE6C /* AppContainer.swift */; };
+		BEE927A62C99B1AC00DCEE6C /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE927A52C99B1AC00DCEE6C /* AppRouter.swift */; };
+		BEE927A92C99B22200DCEE6C /* SongListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE927A82C99B22200DCEE6C /* SongListBuilder.swift */; };
+		BEE927AD2C99B31800DCEE6C /* SongBoxAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE927AC2C99B31800DCEE6C /* SongBoxAPI.framework */; };
+		BEE927AE2C99B31800DCEE6C /* SongBoxAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BEE927AC2C99B31800DCEE6C /* SongBoxAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BEE927B12C99B51800DCEE6C /* SongList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEE927B02C99B51800DCEE6C /* SongList.storyboard */; };
+		BEE927B32C99B5ED00DCEE6C /* SongListContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE927B22C99B5ED00DCEE6C /* SongListContracts.swift */; };
+		BEE927B52C99B70900DCEE6C /* SongPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE927B42C99B70900DCEE6C /* SongPresentation.swift */; };
+		BEE927B72C99BA7200DCEE6C /* SongListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE927B62C99BA7200DCEE6C /* SongListPresenter.swift */; };
+		BEE927B92C99BA7A00DCEE6C /* SongListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE927B82C99BA7A00DCEE6C /* SongListInteractor.swift */; };
+		BEE927BB2C99BA8200DCEE6C /* SongListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE927BA2C99BA8200DCEE6C /* SongListRouter.swift */; };
+		BEE927C32C99BF6900DCEE6C /* SongBoxVIPERTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE927C22C99BF6900DCEE6C /* SongBoxVIPERTests.swift */; };
+		BEE927CD2C99E33800DCEE6C /* SongBoxUtility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE927CC2C99E33800DCEE6C /* SongBoxUtility.framework */; };
+		BEE927CE2C99E33800DCEE6C /* SongBoxUtility.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BEE927CC2C99E33800DCEE6C /* SongBoxUtility.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BEE927D12C99E33B00DCEE6C /* SongBoxAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE927D02C99E33B00DCEE6C /* SongBoxAPI.framework */; };
+		BEE927D22C99E33B00DCEE6C /* SongBoxAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BEE927D02C99E33B00DCEE6C /* SongBoxAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BEE927C42C99BF6900DCEE6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA284DFB2BA4D3F900217F36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA284E022BA4D3F900217F36;
+			remoteInfo = SongBoxVIPER;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BEE927AF2C99B31800DCEE6C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BEE927AE2C99B31800DCEE6C /* SongBoxAPI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEE927CF2C99E33800DCEE6C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BEE927D22C99E33B00DCEE6C /* SongBoxAPI.framework in Embed Frameworks */,
+				BEE927CE2C99E33800DCEE6C /* SongBoxUtility.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AA284E032BA4D3F900217F36 /* SongBoxVIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SongBoxVIPER.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA284E062BA4D3F900217F36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AA284E082BA4D3F900217F36 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AA284E0A2BA4D3F900217F36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AA284E0D2BA4D3F900217F36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AA284E0A2BA4D3F900217F36 /* SongListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListViewController.swift; sourceTree = "<group>"; };
 		AA284E0F2BA4D3FA00217F36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA284E122BA4D3FA00217F36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA284E142BA4D3FA00217F36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEE927A32C99B19100DCEE6C /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		BEE927A52C99B1AC00DCEE6C /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		BEE927A82C99B22200DCEE6C /* SongListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListBuilder.swift; sourceTree = "<group>"; };
+		BEE927AC2C99B31800DCEE6C /* SongBoxAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SongBoxAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEE927B02C99B51800DCEE6C /* SongList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SongList.storyboard; path = ../../SongBoxMVVM/SongBoxMVVM/Scenes/SongList/SongList.storyboard; sourceTree = "<group>"; };
+		BEE927B22C99B5ED00DCEE6C /* SongListContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListContracts.swift; sourceTree = "<group>"; };
+		BEE927B42C99B70900DCEE6C /* SongPresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SongPresentation.swift; path = ../../../SongBoxMVVM/SongBoxMVVM/Scenes/SongList/SongPresentation.swift; sourceTree = "<group>"; };
+		BEE927B62C99BA7200DCEE6C /* SongListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListPresenter.swift; sourceTree = "<group>"; };
+		BEE927B82C99BA7A00DCEE6C /* SongListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListInteractor.swift; sourceTree = "<group>"; };
+		BEE927BA2C99BA8200DCEE6C /* SongListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListRouter.swift; sourceTree = "<group>"; };
+		BEE927C02C99BF6900DCEE6C /* SongBoxVIPERTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SongBoxVIPERTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEE927C22C99BF6900DCEE6C /* SongBoxVIPERTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongBoxVIPERTests.swift; sourceTree = "<group>"; };
+		BEE927CC2C99E33800DCEE6C /* SongBoxUtility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SongBoxUtility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEE927D02C99E33B00DCEE6C /* SongBoxAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SongBoxAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +93,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEE927AD2C99B31800DCEE6C /* SongBoxAPI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEE927BD2C99BF6900DCEE6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEE927D12C99E33B00DCEE6C /* SongBoxAPI.framework in Frameworks */,
+				BEE927CD2C99E33800DCEE6C /* SongBoxUtility.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,7 +113,9 @@
 			isa = PBXGroup;
 			children = (
 				AA284E052BA4D3F900217F36 /* SongBoxVIPER */,
+				BEE927C12C99BF6900DCEE6C /* SongBoxVIPERTests */,
 				AA284E042BA4D3F900217F36 /* Products */,
+				BEE927AB2C99B31800DCEE6C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				AA284E032BA4D3F900217F36 /* SongBoxVIPER.app */,
+				BEE927C02C99BF6900DCEE6C /* SongBoxVIPERTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +131,64 @@
 		AA284E052BA4D3F900217F36 /* SongBoxVIPER */ = {
 			isa = PBXGroup;
 			children = (
-				AA284E062BA4D3F900217F36 /* AppDelegate.swift */,
-				AA284E082BA4D3F900217F36 /* SceneDelegate.swift */,
-				AA284E0A2BA4D3F900217F36 /* ViewController.swift */,
-				AA284E0C2BA4D3F900217F36 /* Main.storyboard */,
-				AA284E0F2BA4D3FA00217F36 /* Assets.xcassets */,
-				AA284E112BA4D3FA00217F36 /* LaunchScreen.storyboard */,
+				BEE927A12C99B15C00DCEE6C /* App */,
+				BEE927AA2C99B24F00DCEE6C /* Resources */,
+				BEE927A72C99B21600DCEE6C /* SongList */,
 				AA284E142BA4D3FA00217F36 /* Info.plist */,
+				BEE927B02C99B51800DCEE6C /* SongList.storyboard */,
 			);
 			path = SongBoxVIPER;
+			sourceTree = "<group>";
+		};
+		BEE927A12C99B15C00DCEE6C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BEE927A32C99B19100DCEE6C /* AppContainer.swift */,
+				AA284E062BA4D3F900217F36 /* AppDelegate.swift */,
+				BEE927A52C99B1AC00DCEE6C /* AppRouter.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BEE927A72C99B21600DCEE6C /* SongList */ = {
+			isa = PBXGroup;
+			children = (
+				BEE927A82C99B22200DCEE6C /* SongListBuilder.swift */,
+				BEE927B22C99B5ED00DCEE6C /* SongListContracts.swift */,
+				BEE927B82C99BA7A00DCEE6C /* SongListInteractor.swift */,
+				BEE927B62C99BA7200DCEE6C /* SongListPresenter.swift */,
+				BEE927BA2C99BA8200DCEE6C /* SongListRouter.swift */,
+				AA284E0A2BA4D3F900217F36 /* SongListViewController.swift */,
+				BEE927B42C99B70900DCEE6C /* SongPresentation.swift */,
+			);
+			path = SongList;
+			sourceTree = "<group>";
+		};
+		BEE927AA2C99B24F00DCEE6C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AA284E112BA4D3FA00217F36 /* LaunchScreen.storyboard */,
+				AA284E0F2BA4D3FA00217F36 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BEE927AB2C99B31800DCEE6C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEE927D02C99E33B00DCEE6C /* SongBoxAPI.framework */,
+				BEE927CC2C99E33800DCEE6C /* SongBoxUtility.framework */,
+				BEE927AC2C99B31800DCEE6C /* SongBoxAPI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BEE927C12C99BF6900DCEE6C /* SongBoxVIPERTests */ = {
+			isa = PBXGroup;
+			children = (
+				BEE927C22C99BF6900DCEE6C /* SongBoxVIPERTests.swift */,
+			);
+			path = SongBoxVIPERTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +201,7 @@
 				AA284DFF2BA4D3F900217F36 /* Sources */,
 				AA284E002BA4D3F900217F36 /* Frameworks */,
 				AA284E012BA4D3F900217F36 /* Resources */,
+				BEE927AF2C99B31800DCEE6C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -87,6 +212,25 @@
 			productReference = AA284E032BA4D3F900217F36 /* SongBoxVIPER.app */;
 			productType = "com.apple.product-type.application";
 		};
+		BEE927BF2C99BF6900DCEE6C /* SongBoxVIPERTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEE927C62C99BF6900DCEE6C /* Build configuration list for PBXNativeTarget "SongBoxVIPERTests" */;
+			buildPhases = (
+				BEE927BC2C99BF6900DCEE6C /* Sources */,
+				BEE927BD2C99BF6900DCEE6C /* Frameworks */,
+				BEE927BE2C99BF6900DCEE6C /* Resources */,
+				BEE927CF2C99E33800DCEE6C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEE927C52C99BF6900DCEE6C /* PBXTargetDependency */,
+			);
+			name = SongBoxVIPERTests;
+			productName = SongBoxVIPERTests;
+			productReference = BEE927C02C99BF6900DCEE6C /* SongBoxVIPERTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -94,11 +238,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1530;
+				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					AA284E022BA4D3F900217F36 = {
 						CreatedOnToolsVersion = 15.3;
+					};
+					BEE927BF2C99BF6900DCEE6C = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = AA284E022BA4D3F900217F36;
 					};
 				};
 			};
@@ -116,6 +264,7 @@
 			projectRoot = "";
 			targets = (
 				AA284E022BA4D3F900217F36 /* SongBoxVIPER */,
+				BEE927BF2C99BF6900DCEE6C /* SongBoxVIPERTests */,
 			);
 		};
 /* End PBXProject section */
@@ -127,7 +276,14 @@
 			files = (
 				AA284E102BA4D3FA00217F36 /* Assets.xcassets in Resources */,
 				AA284E132BA4D3FA00217F36 /* Base in Resources */,
-				AA284E0E2BA4D3F900217F36 /* Base in Resources */,
+				BEE927B12C99B51800DCEE6C /* SongList.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEE927BE2C99BF6900DCEE6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +294,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA284E0B2BA4D3F900217F36 /* ViewController.swift in Sources */,
+				BEE927A62C99B1AC00DCEE6C /* AppRouter.swift in Sources */,
+				BEE927B92C99BA7A00DCEE6C /* SongListInteractor.swift in Sources */,
+				AA284E0B2BA4D3F900217F36 /* SongListViewController.swift in Sources */,
 				AA284E072BA4D3F900217F36 /* AppDelegate.swift in Sources */,
-				AA284E092BA4D3F900217F36 /* SceneDelegate.swift in Sources */,
+				BEE927A42C99B19100DCEE6C /* AppContainer.swift in Sources */,
+				BEE927B52C99B70900DCEE6C /* SongPresentation.swift in Sources */,
+				BEE927B72C99BA7200DCEE6C /* SongListPresenter.swift in Sources */,
+				BEE927BB2C99BA8200DCEE6C /* SongListRouter.swift in Sources */,
+				BEE927B32C99B5ED00DCEE6C /* SongListContracts.swift in Sources */,
+				BEE927A92C99B22200DCEE6C /* SongListBuilder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEE927BC2C99BF6900DCEE6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEE927C32C99BF6900DCEE6C /* SongBoxVIPERTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		AA284E0C2BA4D3F900217F36 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AA284E0D2BA4D3F900217F36 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		BEE927C52C99BF6900DCEE6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA284E022BA4D3F900217F36 /* SongBoxVIPER */;
+			targetProxy = BEE927C42C99BF6900DCEE6C /* PBXContainerItemProxy */;
 		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
 		AA284E112BA4D3FA00217F36 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,7 +468,6 @@
 				INFOPLIST_FILE = SongBoxVIPER/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,7 +495,6 @@
 				INFOPLIST_FILE = SongBoxVIPER/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -338,6 +507,44 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BEE927C72C99BF6900DCEE6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 46PR5V47LD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yunusberdibekk.SongBoxVIPERTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SongBoxVIPER.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SongBoxVIPER";
+			};
+			name = Debug;
+		};
+		BEE927C82C99BF6900DCEE6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 46PR5V47LD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yunusberdibekk.SongBoxVIPERTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SongBoxVIPER.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SongBoxVIPER";
 			};
 			name = Release;
 		};
@@ -358,6 +565,15 @@
 			buildConfigurations = (
 				AA284E182BA4D3FA00217F36 /* Debug */,
 				AA284E192BA4D3FA00217F36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEE927C62C99BF6900DCEE6C /* Build configuration list for PBXNativeTarget "SongBoxVIPERTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEE927C72C99BF6900DCEE6C /* Debug */,
+				BEE927C82C99BF6900DCEE6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
